@@ -9,6 +9,7 @@ def state(capital_city):
 	"New Jersey": "NJ",
 	"Colorado" : "CO"
 	}
+
 	capital_cities = {
 	"OR": "Salem",
 	"AL": "Montgomery",
