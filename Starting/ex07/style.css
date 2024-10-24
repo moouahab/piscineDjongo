@@ -1,0 +1,54 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+table , th, td {
+    border-collapse: collapse;
+    border: 1px solid black; padding:10px;
+}
+
+td {
+    width: 500px;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+/* Styles spécifiques pour chaque période */
+.periode-1 {
+    background-color: #f8b195; /* couleur pour la période 1 */
+}
+.periode-2 {
+    background-color: #f67280; /* couleur pour la période 2 */
+}
+.periode-3 {
+    background-color: #c06c84; /* couleur pour la période 3 */
+}
+.periode-4 {
+    background-color: #6c5b7b; /* couleur pour la période 4 */
+}
+.periode-5 {
+    background-color: #355c7d; /* couleur pour la période 5 */
+}
+.periode-6 {
+    background-color: #99b898; /* couleur pour la période 6 */
+}
+.periode-7 {
+    background-color: #feceab; /* couleur pour la période 7 */
+}
