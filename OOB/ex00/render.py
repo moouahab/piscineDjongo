@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import os
+import re
 import sys
 import settings
 
@@ -13,17 +14,21 @@ def check_variables():
             sys.exit(1)
 
 
+
 def extract_info(file_template):
-    if not file_template.endswith('.template') or not os.path.exists(file_template): 
+    # Vérifie l'extension et l'existence du fichier
+    if not file_template.endswith('.template') or not os.path.exists(file_template):
         sys.exit(f"Erreur : le fichier doit avoir l'extension .template et exister")
     with open(file_template) as file:
         template = file.read()
     check_variables()
-    for var_name, var_value in vars(settings).items():
-        template = template.replace(f"{{{var_name}}}", str(var_value))
-    with open(file_template.replace('.template', '.html'), 'w') as file:
+    # Remplace toutes les variables encadrées de {{...}} par leurs valeurs dans `settings`
+    template = re.sub(r"\{\{(\w+)\}\}", lambda m: str(vars(settings).get(m.group(1), m.group(0))), template)
+    # Création et écriture dans le fichier de sortie
+    output_file = file_template.replace('.template', '.html')
+    with open(output_file, 'w') as file:
         file.write(template)
-    print(f"Le fichier {file_template.replace('.template', '.html')} a été créé avec succès.")
+    print(f"Le fichier {output_file} a été créé avec succès.")
 
 
 def main():
