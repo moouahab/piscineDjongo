@@ -32,13 +32,13 @@ li {
 
 /* Styles spécifiques pour chaque période */
 .periode-1 {
-    background-color: #f8b195; /* couleur pour la période 1 */
+    background-color: #95f8f8; /* couleur pour la période 1 */
 }
 .periode-2 {
-    background-color: #f67280; /* couleur pour la période 2 */
+    background-color: #728af6; /* couleur pour la période 2 */
 }
 .periode-3 {
-    background-color: #c06c84; /* couleur pour la période 3 */
+    background-color: #a16cc0; /* couleur pour la période 3 */
 }
 .periode-4 {
     background-color: #6c5b7b; /* couleur pour la période 4 */
@@ -47,8 +47,8 @@ li {
     background-color: #355c7d; /* couleur pour la période 5 */
 }
 .periode-6 {
-    background-color: #99b898; /* couleur pour la période 6 */
+    background-color: #98b7b8; /* couleur pour la période 6 */
 }
 .periode-7 {
-    background-color: #feceab; /* couleur pour la période 7 */
+    background-color: #feabf0; /* couleur pour la période 7 */
 }

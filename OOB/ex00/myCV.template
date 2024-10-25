@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV - {last_name} {first_name}</title>
+        <style>
+            .data {
+                color : red;
+            }
+            p {
+                text-align : justify;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>{last_name} {first_name}</h1>
+            <p>Âge: <span class="data">{age}</span></p>
+        </header>
+        <main>
+            <section>
+                <h2>Profil</h2>
+                <p>
+                    Je suis actuellement <span class="data">{profession}</span> avec <span class="data">{exp}</span> ans d'expérience dans le domaine.
+                    Passionné par les nouvelles technologies, j'ai développé des compétences variées, 
+                    allant du développement web aux architectures backend robustes. 
+                    Je suis motivé par les défis et souhaite continuer à évoluer dans un environnement dynamique.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
